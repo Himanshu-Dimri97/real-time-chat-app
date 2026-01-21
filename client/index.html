@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Real Time Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/dist/heroicons.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+
+    <div id="usernamePopup" class="fixed inset-0 bg-black/60 flex items-center justify-center">
+        <div id="popupBox" class="bg-white p-6 rounded-lg w-80 text-center">
+            <h3 class="text-lg font-semibold mb-4">Enter Username</h3>
+            <input id="usernameInput" type="text" placeholder="Your name"
+                class="w-full p-2 mb-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button id="joinBtn" class="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Join Chat</button>
+        </div>
+    </div>
+
+    <div id="chat" class="hidden w-96 mx-auto mt-8 p-4 rounded-lg shadow 
+            bg-gradient-to-br from-purple-400/30 via-pink-300/30 to-blue-400/30
+            backdrop-blur-md border border-white/20">
+        <h3 class="text-lg font-semibold mb-2">Real Time Chat</h3>
+        <div id="messages" class="h-72 overflow-y-auto flex flex-col gap-2 mb-2"></div>
+        <input id="messageInput" type="text" placeholder="Type message..."
+            class="w-full p-2 mb-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button id="sendBtn" class="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600">Send</button>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
