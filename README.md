@@ -24,28 +24,21 @@ A real-time chat application built using Node.js, Express, and Socket.IO.
 
 \- Socket.IO
 
-\- HTML, CSS, JavaScript
+\- HTML, Tailwind, JavaScript
 
 
 
 \## Project Structure
 
 real-time-chat-app/
-
 ├── nodeServer/
-
 │   ├── server.js
-
 │   ├── package.json
-
-│   └── node\_modules/
-
+│   ├── package-lock.json
+│   └── node_modules/
 ├── client/
-
 │   ├── index.html
-
-│   └── script.js
-
+│   └── index.js
 └── README.md
 
 
@@ -85,14 +78,6 @@ real-time-chat-app/
 \- Use a `.env` file for sensitive configuration if needed
 
 
-
-\## 🔹 Git Commands to Save \& Push Changes
-
-`git add README.md`  
-
-`git commit -m "Add complete README with Socket.IO installation steps"`  
-
-`git push`
 
 
 
